@@ -1,6 +1,7 @@
 <?php
 
-use Core\Response;
+use App\Core\Response;
+use App\Core\Session;
 
 function dd($value)
 {
@@ -54,5 +55,5 @@ function redirect($path)
 
 function old($key, $default = '')
 {
-    return Core\Session::get('old')[$key] ?? $default;
+    return Session::get('old')[$key] ?? $default;
 }

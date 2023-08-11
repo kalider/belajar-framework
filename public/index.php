@@ -8,6 +8,7 @@ require BASE_PATH . 'vendor/autoload.php';
 require BASE_PATH . 'src/Core/functions.php';
 require BASE_PATH . 'bootstrap.php';
 
+session_start();
 $router = new \App\Core\Router();
 require BASE_PATH . 'routes.php';
 
